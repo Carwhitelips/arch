@@ -8,7 +8,7 @@
 import gulp from 'gulp';
 import sass from 'gulp-sass';
 
-// Compile Sass file
+// Compile Sass file to CSS
 gulp.task('sass', () =>
   gulp.src('./scss/**/*.scss')
     .pipe(sass().on('error', sass.logError))
