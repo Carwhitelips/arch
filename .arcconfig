@@ -1,4 +1,6 @@
 {
   "phabricator.uri": "https://carwhitelips.phacility.com/",
-  "arc.land.onto.default": "develop"
+  "repository.callsign": "W",
+  "arc.land.onto.default": "develop",
+  "history.immutable": "true"
 }
