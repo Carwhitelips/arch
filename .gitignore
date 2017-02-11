@@ -5,3 +5,4 @@
 # Deployed apps should consider commenting this line out:
 node_modules
 yarn.lock
+arch.css

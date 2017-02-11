@@ -1,0 +1,14 @@
+/*------------------------------------*\
+    #SITE-NAV
+\*------------------------------------*/
+
+.site-nav {
+  @extend %clearfix;
+
+  position: fixed;
+}
+
+  .site-nav__home-link {
+    display: block;
+    float: left;
+  }

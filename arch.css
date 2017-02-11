@@ -1,0 +1,207 @@
+@charset "UTF-8";
+/*------------------------------------*    #ARCH
+\*------------------------------------*/
+/**
+ * CONTENTS
+ *
+ * SETTINGS
+ * Global...............Globally-available variables and config.
+ *
+ * TOOLS
+ * Mixins...............Useful mixins.
+ * Extends..............Useful extends.
+ *
+ * GENERIC
+ * Normalize.css........A level playing field.
+ * Box-sizing...........Better default `box-sizing`.
+ *
+ * BASE
+ * Headings.............H1–H6 styles.
+ *
+ * OBJECTS
+ * Wrappers.............Wrapping and constraining elements.
+ *
+ * COMPONENTS
+ * Page-head............The main page header.
+ * Page-foot............The main page footer.
+ * Buttons..............Button elements.
+ *
+ * TRUMPS
+ * Text.................Text helpers.
+ *
+ * Author: darwin <darwin301194@gmail.com>
+ */
+/*------------------------------------*    #MIXINS
+\*------------------------------------*/
+/*
+ * Breakpoint viewport sizes and media queries.
+ *
+ * We concern to mobile first, so for now we just handle for media min-width
+ * The breakpoint based on the most common screen sizes.
+ * Check it the link: https://medium.freecodecamp.com/the-100-correct-way-to-do-css-breakpoints-88d6a5ba1862#.2vnm1rtv4
+ *
+ * Author: darwin <darwin301194@gmail.com>
+ */
+/*------------------------------------*    #CLEARFIX
+\*------------------------------------*/
+/**
+ * Micro clearfix, as per: css-101.org/articles/clearfix/latest-new-clearfix-so-far.php
+ * Extend the clearfix placeholder class `%clearfix` with Sass to avoid the `.clearfix` class appearing
+ * over and over in your markup.
+ */
+.site-nav:after {
+  content: "";
+  display: table;
+  clear: both; }
+
+/*------------------------------------*    #REBOOT
+\*------------------------------------*/
+/**
+ * Reboot css.
+ *
+ * Based on http://jaydenseric.com/blog/forget-normalize-or-resets-lay-your-own-css-foundation
+ * Todo: Check it again later, remove unnecessary rules!
+ *
+ * Author: darwin <darwin301194@gmail.com>
+*/
+/**
+ * 1. Change the default font family in all browsers.
+ * 2. Correct the line height in all browsers.
+ * 3. Prevent adjustments of font size after orientation changes in
+ *    IE on Windows Phone and in iOS.
+ * 4. Fonts on OS X will look more consistent with other systems
+ *    that do not render text using sub-pixel anti-aliasing.
+ * 4. Although grayscale is inferior to sub-pixel anti-aliasing, most fonts
+      were designed for the "thinner" anti-aliasing and look better that way.
+ * 4. Setting this smoothing beforehand prevents an ugly flickering of font
+ *    "thickness" when animations start and stop. Browsers use this simpler font
+ *    smoothing to save on resources when animating or transitioning elements.
+ * 5. More sensible default box-sizing:
+ *    css-tricks.com/inheriting-box-sizing-probably-slightly-better-best-practice
+ */
+html {
+  font-family: sans-serif;
+  /* 1 */
+  line-height: 1;
+  /* 2 */
+  -ms-text-size-adjust: 100%;
+  /* 3 */
+  -webkit-text-size-adjust: 100%;
+  /* 3 */
+  -moz-osx-font-smoothing: grayscale;
+  /* 4 */
+  -webkit-font-smoothing: antialiased;
+  /* 4 */
+  box-sizing: border-box;
+  /* 5 */ }
+
+/**
+ * More sensible default box-sizing
+ */
+*, *:before, *:after {
+  box-sizing: inherit; }
+
+/**
+ * Remove the margin in all browsers.
+ */
+body {
+  margin: 0; }
+
+/**
+ * Reset margin padding.
+ */
+h1, h2, h3, h4,
+p,
+figure,
+ol, ul {
+  margin: 0;
+  padding: 0; }
+
+/**
+ * A heading's level should be determined by it's placement
+ * in the document outline and not by the stylistic appearance of the words.
+ */
+h1,
+h2,
+h3,
+h4 {
+  font-size: inherit; }
+
+/**
+ * Add the correct font weight in Chrome, Edge, and Safari.
+ */
+strong {
+  font-weight: bold; }
+
+/**
+ * 1. Remove the gray background on active links in IE 10.
+ * 2. Remove gaps in links underline in iOS 8+ and Safari 8+.
+ * 3. Remove underline link.
+ */
+a {
+  background-color: transparent;
+  /* 1 */
+  -webkit-text-decoration-skip: objects;
+  /* 2 */
+  text-decoration: none;
+  /* 3 */ }
+
+/**
+ * Remove the outline on focused links when they are also active or hovered
+ * in all browsers.
+ */
+a:active,
+a:hover {
+  outline-width: 0; }
+
+/**
+ * 1. Show the overflow in IE.
+ * 2. Reset the native appearance in all browsers
+ * 3. Rule fixes buggy inheritance
+ * 4. UX reasons and consistency with links
+ */
+button {
+  overflow: visible;
+  /* 1 */
+  border: 0;
+  /* 2 */
+  font: inherit;
+  /* 2 */
+  letter-spacing: inherit;
+  /* 2 */
+  background: none;
+  /* 2 */
+  -webkit-font-smoothing: inherit;
+  /* 3 */
+  cursor: pointer;
+  /* 4 */ }
+
+/**
+ * This undoes a bummer psuedo-element Firefox adds inside buttons
+ * that causes them to display larger than expected
+ */
+::-moz-focus-inner {
+  padding: 0;
+  border: 0; }
+
+/**
+ * It removes the gross user agent default outline
+ * that appears when focusing interactive elements
+ */
+:focus {
+  outline: 0; }
+
+/**
+ * Remove the border on images inside links in IE 10-.
+ */
+img {
+  border: 0; }
+
+/*------------------------------------*    #SITE-NAV
+\*------------------------------------*/
+.site-nav {
+  position: fixed; }
+
+.site-nav__home-link {
+  display: block;
+  float: left; }

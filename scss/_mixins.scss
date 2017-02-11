@@ -1,0 +1,26 @@
+/*------------------------------------*\
+    #MIXINS
+\*------------------------------------*/
+
+/*
+ * Breakpoint viewport sizes and media queries.
+ *
+ * We concern to mobile first, so for now we just handle for media min-width
+ * The breakpoint based on the most common screen sizes.
+ * Check it the link: https://medium.freecodecamp.com/the-100-correct-way-to-do-css-breakpoints-88d6a5ba1862#.2vnm1rtv4
+ *
+ * Author: darwin <darwin301194@gmail.com>
+ */
+@mixin media-breakpoint($range) {
+  $phone_boundary: 600px;
+  $tablet_portrait_boundary: 900px;
+  $tablet_landscape_boundary: 1200px;
+
+  @if $range == tablet-portrait-up {
+    @media (min-width: $phone_boundary) { @content; }
+  } @else if $range == tablet-landscape-up {
+    @media (min-width: $tablet_portrait_boundary) { @content; }
+  } @else if $range == desktop-up {
+    @media (min-width: $tablet_landscape_boundary) { @content; }
+  }
+}
