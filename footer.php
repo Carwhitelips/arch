@@ -5,6 +5,7 @@
  * Contains footer tag and the closing of the html
  *
  * @package _arch
+ * @author: darwin <darwin301194@gmail.com>
  */
 ?>
   <footer></footer>
