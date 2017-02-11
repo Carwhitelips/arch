@@ -1,8 +1,8 @@
 # Ignore .DS_Store files on OS X
 .DS_Store
 
-# Dependency directory
 # Deployed apps should consider commenting this line out:
+# Dependency directory
 node_modules
 yarn.lock
 
