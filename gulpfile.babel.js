@@ -14,8 +14,7 @@ gulp.task('sass', () =>
     .pipe(gulp.dest('./'))
 );
 
-// Watch the sass task
-// Run it when the files are changed!
+// Watch the sass task. Run it when the files are changed!
 gulp.task('watch', () =>
   gulp.watch('scss/**/*.scss', ['sass'])
 );
