@@ -6,9 +6,17 @@
   @extend %clearfix;
 
   position: fixed;
+  bottom: 150px;
+  height: 0;
 }
 
   .site-nav__home-link {
-    display: block;
-    float: left;
   }
+
+  .site-nav__list {
+
+  }
+
+    .site-nav__item {
+      margin-bottom: 5px;
+    }
