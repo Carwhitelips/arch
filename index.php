@@ -33,7 +33,7 @@ get_header(); ?>
     <a href="#" class="project__link" style="background-image: url('///im.vsco.co/1/5552ebdb3efeb4002213/5883f8881ed6314001ed5a50/vsco_012217.jpg?w=1280')">
       <div class="project-content">
         <div>December 22 — 2016</div>
-        <div class="project-content__name">Phosphene - New digital precense</div>
+        <div class="project-content__name">Phosphene - New Hype.</div>
       </div>
     </a>
   </article>
