@@ -20,3 +20,13 @@
     .site-nav__item {
       margin-bottom: 5px;
     }
+
+
+
+
+
+.site-nav--mobile {
+  @extend %clearfix;
+
+  float: right;
+}

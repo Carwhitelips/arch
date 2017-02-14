@@ -18,12 +18,17 @@
     <?php wp_head(); ?>
   </head>
   <body <?php body_class(); ?>>
-    <!-- <header class="header">
+    <header class="header">
       <a href="#" class="site-nav__home-link">Arch.</a>
-      <nav class="site-nav">
+      <div class="menu-burger">
+        <span class="menu-burger__line menu-burger__line--top"></span>
+        <span class="menu-burger__line menu-burger__line--bottom"></span>
+      </div>
+
+      <!-- <nav class="site-nav">
         <ul class="site-nav__list">
           <li class="site-nav__item"><a href="#" class="site-nav__link">photographs</a></li>
           <li class="site-nav__item"><a href="#" class="site-nav__link">about us</a></li>
         </ul>
-      </nav>
-    </header> -->
+      </nav> -->
+    </header>
