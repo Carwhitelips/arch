@@ -9,14 +9,14 @@ import sass from 'gulp-sass';
 
 // Compile Sass file to CSS
 gulp.task('sass', () =>
-  gulp.src('./scss/**/*.scss')
+  gulp.src('./assets/scss/**/*.scss')
     .pipe(sass().on('error', sass.logError))
     .pipe(gulp.dest('./'))
 );
 
 // Watch the sass task. Run it when the files are changed!
 gulp.task('watch', () =>
-  gulp.watch('scss/**/*.scss', ['sass'])
+  gulp.watch('./assets/scss/**/*.scss', ['sass'])
 );
 
 // `gulp` cli

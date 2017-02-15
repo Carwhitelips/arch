@@ -1,0 +1,35 @@
+/*------------------------------------*\
+    #SITE-NAV
+\*------------------------------------*/
+
+.site-nav {
+  @extend %clearfix;
+
+  position: fixed;
+  bottom: 150px;
+  height: 0;
+}
+
+  .site-nav__home-link {
+    font-weight: 700;
+    color: black;
+    opacity: .5;
+  }
+
+  .site-nav__list {
+
+  }
+
+    .site-nav__item {
+      margin-bottom: 5px;
+    }
+
+
+
+
+
+.site-nav--mobile {
+  @extend %clearfix;
+
+  float: right;
+}

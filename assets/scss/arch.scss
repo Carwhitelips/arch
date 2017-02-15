@@ -37,10 +37,14 @@
 
 // TOOLS
 @import "mixins";
+@include font-face(foundersgroteskweb, assets/fonts/foundersgroteskweb, light regular medium semibold, eot svg ttf woff woff2)
 @import "extends";
 
 // GENERIC
 @import "reboot";
 
 // COMPONENTS
-@import "components/site-nav"
+@import "components/header";
+@import "components/site-nav";
+@import "components/menu-burger";
+@import "components/project";

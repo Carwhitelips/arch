@@ -1,0 +1,29 @@
+/*------------------------------------*\
+    #HEADER
+\*------------------------------------*/
+
+.menu-burger {
+  position: relative;
+  top: 2px;
+  float: right;
+  width: 24px;
+  height: 18px;
+  cursor: pointer;
+}
+
+  .menu-burger__line {
+    position: absolute;
+    right: 0;
+    width: 100%;
+    height: 2px;
+    background-color: black;
+    opacity: .5;
+  }
+
+  .menu-burger__line--top {
+    top: 4px;
+  }
+
+  .menu-burger__line--bottom {
+    bottom: 4px;
+  }
